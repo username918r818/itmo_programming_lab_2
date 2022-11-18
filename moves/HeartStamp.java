@@ -6,6 +6,7 @@ public class HeartStamp extends PhysicalMove{
         super(Type.PSYCHIC, 60, 100);
     }
 
+    @Override
     protected String describe() {
         return "на сердце колдует";
     }

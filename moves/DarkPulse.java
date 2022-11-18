@@ -7,6 +7,7 @@ public class DarkPulse extends SpecialMove {
         super(Type.DARK, 80, 100);
     }
 
+    @Override
     protected String describe() {
         return "очень страшно пульсирует";
     }

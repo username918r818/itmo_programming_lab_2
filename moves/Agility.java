@@ -6,10 +6,12 @@ public class Agility extends StatusMove {
     public Agility() {
         super(Type.PSYCHIC, 0, 0);
     }
+    @Override
     protected void applyOppEffects(Pokemon p) {
         p.setMod(Stat.SPEED, 2);
     }
 
+    @Override
     protected String describe() {
         return "ловчит";
     }

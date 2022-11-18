@@ -5,6 +5,7 @@ public class Venoshock extends SpecialMove {
     public Venoshock() {
         super(Type.POISON, 65, 100);
     }    
+    @Override
     protected void applyOppDamage(Pokemon def, double damage) {
         if (def.getCondition().equals(Status.POISON)) {
             def.setMod(Stat.HP, 2 * (int) Math.round(damage)); 
@@ -12,6 +13,7 @@ public class Venoshock extends SpecialMove {
             def.setMod(Stat.HP, (int) Math.round(damage)); 
         }
     }
+    @Override
     protected String describe() {
         return "веношокирует";
     }
